@@ -10,7 +10,7 @@ namespace NinjaDomain.Classes
         public bool ServedInOniwaban { get; set; }
         public Clan Clan { get; set; }
         public int ClanId { get; set; }
-        public List<NinjaEquipment> EqupimentOwned { get; set; }
+        public virtual List<NinjaEquipment> EqupimentOwned { get; set; }
         public System.DateTime DateOfBirth { get; set; }
     }
     public class Clan
@@ -26,7 +26,7 @@ namespace NinjaDomain.Classes
         public int Id { get; set; }
         public string Name { get; set; }
         public EquipmentType Type { get; set; }
-        [Required]
+        [Required] // Tells entity framework to create a 1 to many relationship
         public Ninja Ninja { get; set; }
     }
 }
