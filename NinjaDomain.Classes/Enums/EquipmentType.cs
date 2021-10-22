@@ -3,7 +3,7 @@
     public enum EquipmentType
     {
         Tool = 1,
-        Weapon,
-        Outwear
+        Weapon = 2,
+        Outwear = 3
     }
 }

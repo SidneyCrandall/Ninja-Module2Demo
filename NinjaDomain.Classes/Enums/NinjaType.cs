@@ -3,6 +3,6 @@
     public enum NinjaType
     {
         Shinobi = 1,
-        Kunoichi
+        Kunoichi = 2
     }
 }
